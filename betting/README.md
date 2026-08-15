@@ -15,8 +15,8 @@ A league is only workable if it exists in **all three**:
 1. **football-data.co.uk** — historical results + **closing odds** (incl.
    Pinnacle). The load-bearing source: the only one giving a historical *market
    price to beat*. This is our backtest benchmark.
-2. **FotMob** — xG, shots, lineups, form (the signal features), via the scraper
-   in [`../fotmob`](../fotmob).
+2. **FotMob** — xG, shots, lineups, form (the signal features), via the FotMob
+   scraper (in the separate [`soccer-bot`](https://github.com/ecolindiaz/soccer-bot) repo).
 3. **Kalshi** — where the prematch trade is actually placed. Coverage here is
    the open question, so it's supplied manually from a tradability audit.
 
@@ -26,7 +26,7 @@ Computes the intersection and emits the shortlist, with the IDs each downstream
 step needs (football-data code for odds, FotMob league id for features).
 
 ```bash
-pip install -r ../fotmob/requirements.txt      # requests (+ pandas, optional)
+pip install -r requirements.txt      # requests (+ pandas, optional)
 
 # See the modelable universe (football-data ∩ FotMob) — no Kalshi list yet:
 python league_overlap.py --out overlap.csv

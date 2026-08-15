@@ -7,7 +7,7 @@ The betting thesis only works on leagues that exist in ALL THREE data worlds:
                             This is the load-bearing source: it's the only one
                             that gives a historical *market price* to beat.
   2. FotMob               — xG / shots / lineups / form (the signal features),
-                            via the scraper in ../fotmob.
+                            via the FotMob scraper (in the soccer-bot repo).
   3. Kalshi               — where we'd actually place the prematch trade.
 
 A league missing from any one of the three is untradeable-or-unmodelable, so
