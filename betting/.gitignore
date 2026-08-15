@@ -1,0 +1,7 @@
+# Your actual Kalshi list and generated output — not committed.
+kalshi_leagues.txt
+overlap.csv
+*.csv
+
+__pycache__/
+*.pyc
